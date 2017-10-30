@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/id_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="账号"
+            android:maxLines="1"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/id_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="regist"
+        android:text="注册" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="login"
+        android:text="登录" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/callNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="对方号码"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="call"
+        android:text="拨打" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="monitor"
+        android:text="监控" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="share"
+        android:text="分享视频" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="sharePic"
+        android:text="分享照片" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/log1"
+            android:text="hello world !"
+            android:textColor="#f00"
+            android:textSize="25dp"/>
+    </ScrollView>
+</LinearLayout>
