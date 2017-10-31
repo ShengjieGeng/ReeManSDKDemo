@@ -40,3 +40,5 @@ compile 'compile com.melon.reeman:reemansdk:2.1.0'
 ```java
     ReeManSDKManager.getInstance().onDestroy();
 ```
+### 上图
+![reeman](https://github.com/ShengjieGeng/ReeManSDKDemo/blob/master/reemanDemo.png)
