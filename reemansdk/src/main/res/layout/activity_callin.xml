@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/call_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rela_video_jietong"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_video_accept"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:alpha="0.6"
+            android:background="@drawable/btn_jietong_style" />
+
+        <Button
+            android:id="@+id/btn_video_refuse"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:alpha="0.6"
+            android:background="@drawable/av_handup_style" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_video_robot_bg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/circle" >
+
+        <ImageView
+            android:id="@+id/video_robot_tou"
+            android:layout_width="55dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/vodeo_robot_tou" />
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            android:src="@mipmap/video_robot_shenti" />
+    </FrameLayout>
+
+</RelativeLayout>

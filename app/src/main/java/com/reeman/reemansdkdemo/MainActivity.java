@@ -28,6 +28,7 @@ import com.reeman.reemansdk.utils.message.TencentMessage;
 import com.tencent.TIMElem;
 import com.tencent.TIMElemType;
 import com.tencent.TIMMessage;
+import com.tencent.imcore.IFileTrans;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -61,6 +62,10 @@ public class MainActivity extends AppCompatActivity implements ReemanCallListene
         id_username = (EditText) findViewById(R.id.id_username);
         id_password = (EditText) findViewById(R.id.id_password);
         callNumber = (EditText) findViewById(R.id.callNumber);
+        String deviceID = SPManager.getSharedPreferences(this).getString("deviceID", "");
+        if (!TextUtils.isEmpty(deviceID)) {
+            callNumber.setText(deviceID);
+        }
         ReeManSDKManager.getInstance().addCallListener(this);
         ReeManSDKManager.getInstance().addStatusListener(this);
         ReeManSDKManager.getInstance().addMessageListener(this);
@@ -168,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements ReemanCallListene
             focusView.requestFocus();
         } else {
             System.out.println(TAG+"MainActivity:callNumber==="+callNumber);
-            ReeManSDKManager.getInstance().call(getApplicationContext(), num, ReeManSDKManager.TYPE_VIDEO);
+            ReeManSDKManager.getInstance().call(getApplicationContext(), num, ReeManSDKManager.TYPE_VIDEO,"二娃");
         }
     }
     public void monitor(View view) {
@@ -181,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements ReemanCallListene
         } else {
             stringBuilder = new StringBuilder("");
             System.out.println(TAG+"MainActivity:callNumber==="+callNumber);
-            ReeManSDKManager.getInstance().call(getApplicationContext(), num, ReeManSDKManager.TYPE_MONITOR);
+            ReeManSDKManager.getInstance().call(getApplicationContext(), num, ReeManSDKManager.TYPE_MONITOR,"二娃");
         }
     }
     public void login(View view) {

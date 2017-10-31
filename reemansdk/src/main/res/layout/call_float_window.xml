@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/call_float_view">
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/view_big"
+        android:translationZ="5dp"
+        android:elevation="5dp"
+        android:background="@drawable/float_window_big" />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:translationZ="5dp"
+        android:elevation="5dp"
+        android:id="@+id/view_small"
+        android:layout_centerInParent="true"
+        android:background="@drawable/float_window_small" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小曼通话"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        android:textColor="#000"
+        android:id="@+id/tv_title"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在与"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        android:textColor="#000"
+        android:layout_above="@id/tv_title"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45:23"
+        android:id="@+id/tv_time"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        android:textColor="#000"
+        android:layout_below="@id/tv_title"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

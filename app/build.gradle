@@ -30,7 +30,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.google.android:multidex:0.1'
     testCompile 'junit:junit:4.12'
-    compile 'com.melon.reeman:reemansdk:2.0.1'
+    compile 'com.melon.reeman:reemansdk:2.1.0'
     compile project(':easypermissions')
     compile 'com.android.support:design:26.0.0-alpha1'
 }
